@@ -1,0 +1,512 @@
+
+html {
+    background-image: url("../images/site/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: "Comic Sans MS", "Comic Sans";
+    font-size: 200%;
+}
+
+body {
+    background-color: #ffffff;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.acmeLogo {
+    height: auto;
+    width: 35%;
+}
+
+.loginIconFig {
+    float: right;
+    width: 40%;
+    margin-top: 0%;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+
+.loginIcon {
+
+    height: auto;
+    width: 20%;
+}
+
+.myAccount {
+    font-size: 0.9em;
+    float: right;
+
+}
+
+nav {
+    background-color: #de2226;
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.3em; 
+}
+
+nav a:active {
+    background: #ffffff;
+    color: #de2226;
+}
+
+nav a:hover {
+    background: #ffffff;
+    color: #de2226; 
+}
+
+h1 { 
+   /* font-size: 600%; */
+    margin: 0px;
+    text-align: left;
+
+}
+
+.rocket {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.rocket img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.rocket:after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255,255,255,0.5);
+}
+
+.rocket-text {
+    display: block;
+    position: absolute;
+    width: 50%;
+    color: #990033;
+    left: 50%;
+    bottom: 0%;
+    padding: 1em;
+    z-index: 2;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+   /* font-size: 220%; */
+}
+
+.rocket-text img {
+    width: 150%;
+}
+
+.rocket-text b {
+   /* font-size: 140%;*/
+}
+
+
+li {
+    margin-left: 10%;
+    margin-right: 10%
+}
+
+.recipes {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.recipes figure {
+    background-color: lightgray;
+    width: 48%;
+    margin: 1%;
+    text-align: center;
+    line-height: 75px;
+   /* font-size: 30px;*/
+}
+
+.recipes figure img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+#footerBar {
+    height: 5px;
+    background: black;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.4em;
+}
+
+.formClass {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*font-size: 400%;*/
+}
+
+.smallP {
+    /*font-size: 25%;*/
+}
+
+input {
+    width: 80%;
+    font-size: 1em;
+}
+
+button {
+    font-size: 2em;
+    background-color: #de2226;
+    color: #ffffff;
+}
+
+.center {
+    width: 100%;
+    text-align: center;
+
+}
+.center ul {
+    list-style-type: none; 
+}
+
+.center table {
+    margin: 0 auto;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+.warning {
+    color: red;
+}
+
+.prod-info{
+    /*font-size: 200%; */
+}
+
+.prod-desc{
+   /* font-size: 200%;*/
+}
+
+#price {
+    color: red;
+    font-weight: bold;
+    font-size: 1.5em;
+    list-style-type: none;
+}
+
+#stock {
+    color: green;
+    font-weight: bold;
+    font-size: 1.5em;
+    list-style-type: none;
+}
+
+#Bar {
+    height: 1px;
+    background: black;
+    list-style-type: none;
+}
+
+
+
+#thumbContainer {
+float: left;
+}
+
+.thumbItem{
+display: table;
+}
+
+#reviewText{
+    width: 80%;
+    height: 10em;
+}
+
+.reviewOutput{
+    word-wrap: break-word;
+    background-color: rgba(248,242,148,0.5);
+}
+
+textarea{
+    font-size: 1.5em;
+}
+
+  #prodImage{
+    display: block;
+
+    width: 75%;
+    }
+/*******************************************************************************
+                                FOR LARGE SCREENS
+*******************************************************************************/
+
+@media only screen 
+and (min-width : 1224px) { 
+    html {
+        background-image: url("../images/site/background.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        font-family: "Comic Sans MS", "Comic Sans";
+        font-size: 100%;
+    }
+
+    body {
+        background-color: #ffffff;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .acmeLogo {
+        height: auto;
+        width: 20%;
+    }
+
+    .loginIconFig {
+        float: right;
+        width: 13%;
+        margin-top: 1%;
+    }
+
+    .loginIcon {
+
+        height: auto;
+        width: 20%;
+    }
+
+    .myAccount {
+        font-size: 150%;
+        float: right;
+
+    }
+
+    nav {
+        background-color: #de2226;
+        overflow: hidden;
+    }
+
+    nav a {
+        float: left;
+        color: #ffffff;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 200%;
+    }
+
+    nav a:active {
+        background: #ffffff;
+        color: #de2226;
+    }
+
+    nav a:hover {
+        background: #ffffff;
+        color: #de2226; 
+    }
+
+    h1 { 
+        font-size: 300%;
+        margin: 0px;
+        text-align: center;
+
+    }
+
+    .rocket {
+        position: relative;
+        padding: 0;
+        margin: 0;
+    }
+
+    .rocket img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    .rocket:after {
+        content: "";
+        position: absolute;
+        display: block;
+        left: 50%;
+        top: 0;
+        width: 50%;
+        height: 100%;
+        background: rgba(255,255,255,0.5);
+    }
+
+    .rocket-text {
+        display: block;
+        position: absolute;
+        width: 50%;
+        color: #990033;
+        left: 50%;
+        bottom: 25%;
+        padding: 1em;
+        z-index: 2;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        font-size: 100%;
+    }
+
+    .rocket-text img {
+        display: block;
+        width: auto;
+        left: 50%;
+        margin: 0px;
+    }
+
+    .rocket-text b {
+        font-size: 140%;
+    }
+
+    .reviews {
+        float: right;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    li {
+        margin-left: 10%;
+        margin-right: 10%
+    }
+
+    .recipes {
+        width: 35%;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    .recipes figure {
+        background-color: lightgray;
+        width: 48%;
+        margin: 1%;
+        text-align: center;
+        line-height: 75px;
+        font-size: 100%;
+    }
+
+    .recipes figure img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+    }
+
+    #footerBar {
+        height: 5px;
+        background: black;
+    }
+    footer {
+        font-size: 75%;
+        text-align: center;
+    }
+
+    .formClass {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 100%;
+    }
+
+    .smallP {
+        font-size: 80%;
+    }
+
+    input {
+        width: 25%;
+        font-size: 1em;
+    }
+
+    button {
+        font-size: 100%;
+        background-color: #de2226;
+        color: #ffffff;
+    }
+
+    .prod-info{
+        font-size: 100%;
+        width: 25%;
+        padding: 0px;
+    }
+
+    .prod-desc{
+        font-size: 100%;
+        margin-left:auto;
+        margin-right:auto;
+        text-align:center;
+        width: 25%;
+        margin: 20px;
+        font-weight: bold;
+
+
+    }
+
+
+    
+    #thumbImg {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+}
+
+#prod-display {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    }
+    #image-display{
+            display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+    
+    .reviewBlock {
+        margin: 0 auto;
+       
+        height: auto;
+        width: 75%
+    }
+    
+    #droduct-detailDiv{
+        display: flex;
+        justify-content: center;
+    }
+    
+    textarea{
+    font-size: 1em;
+}
+    
+    #prodImage{
+        height: 500px;
+        width: auto;
+    }
+}

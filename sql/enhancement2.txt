@@ -1,0 +1,26 @@
+INSERT INTO clients
+(  clientFirstname
+ , clientLastname
+ , clientEmail
+ , clientPassword
+ , comments)
+VALUES
+(  'Tony'
+ , 'Stark'
+ , 'tony@starkent.com'
+ , 'Iam1ronM@n'
+ , 'I am the real Ironman');
+ 
+ UPDATE clients SET clientLevel = 3 WHERE clientId = 1;
+
+UPDATE inventory 
+SET invName = 'Climbing Rope' 
+  , invDescription = 'This climbing rope is ideal for all uses. Each rope is the highest quality nylon and comes in 100 foot lengths.'
+WHERE invId = 15;
+
+SELECT i.invName, c.categoryName 
+FROM inventory i 
+INNER JOIN categories c ON i.categoryId = c.categoryId
+WHERE c.categoryId = 3;
+
+DELETE FROM inventory WHERE inventory.invId = 7;
